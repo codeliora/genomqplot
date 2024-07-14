@@ -28,8 +28,7 @@ for (k in 5:25){
   all_data <- rbind(all_data,data)
 }
 all_data$QN = factor(all_data$Q, paste0("Q",seq(1:25)), ordered=TRUE)
-#all_data
-#custom_palette <- hue_pal(h.start=90)(25) # Creates a palette with 25 distinct colors
+
 custom_palette <- divergingx_hcl(25,"Roma")
 
 all_data %>%
