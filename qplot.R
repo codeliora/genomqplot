@@ -10,6 +10,7 @@ values <- readLines(file_path)
 # Convert the vector to a data frame with a column name "sample"
 samplelist <- data.frame(sample = values)
 
+# initialize a tibble before reading data
 all_data <- tibble(sample=character(),
                    k=numeric(),
                    QN=numeric(),
